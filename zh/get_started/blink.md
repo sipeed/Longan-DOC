@@ -41,13 +41,31 @@ debug_tool = jlink         ; 调试工具 默认jlink ，可选gd-link
 * 准备USB 转 串口下载器
 * 连接开发板与下载器
 * 开发板按住 `BOOT` 键，再按 `RESET` 键重启开发板后再松开 `BOOT` 键，开发板进入下载模式。
-  
+
 ### JTAG 下载
 * 准备J-link 或 GD-Link 
 * 连接开发板
-  
+
 ### USB DFU 下载
-* 待添加
+下载DFU工具：http://dl.sipeed.com/LONGAN/Nano/Tools/GD32_MCU_Dfu_Tool_V3.8.1.5784_1.rar
+
+解压出两个文件夹：
+
+GD32 MCU Dfu Drivers_v1.0.1.2316  和 GD32 MCU Dfu Tool_v3.8.1.5784
+
+先进入driver文件夹，安装对应的驱动文件，注意使用管理员权限运行
+
+![](assets/how_to_install_dfu.png)
+
+运行 GD32 MCU Dfu Tool.exe 
+将 Longan Nano 插到电脑，按住 Boot0 键，短按 Reset 键，再松开 Boot0 键，
+可以看到 DFU 工具中识别到了 GD32VF 芯片
+
+选择对应的固件文件，并勾选烧录后校验，点击OK，即可进行烧录
+
+烧录完成之后不会自动复位，需要自己手工按下复位按键，查看运行效果
+
+![](assets/how_to_use_dfu.png)
 
 ## 一键下载
 
