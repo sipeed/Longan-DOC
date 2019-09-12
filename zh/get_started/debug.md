@@ -12,10 +12,21 @@ Debug 调试
 |  GND   |  GND   |
 
 ## 修改配置文件
-修改工程配置文件 `platformio.ini`， 在下面添加 `debug_tool = jlink` ，根据实际调试器型号选择。目前支持Jlink 、GD-LINK ，其他调试器待添加。
-
+修改工程配置文件 `platformio.ini`， 在下面添加
+```ini 
+debug_tool = jlink
+``` 
+根据实际调试器型号选择。目前支持的调试器列表
+|调试器|
+|:----:|
+|jlink|
+|gd-link|
+|ft2232|
+|sipeed-rv-debugger|
+|altera-usb-blaster|
+|um232h|
 ## 一键调试
 
 切换到 VS CODE 左侧的 `DEBUG` 界面， 点击绿色箭头即可进行调试。
 
-![](assets/../../../assets/longan_pio_debug.jpg).
+![](\../../assets/pio_debug_longan.png).
