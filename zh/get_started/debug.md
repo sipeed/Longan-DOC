@@ -13,18 +13,20 @@ Debug 调试
 
 ## 修改配置文件
 修改工程配置文件 `platformio.ini`， 在下面添加
+
 ```ini 
 debug_tool = jlink
 ``` 
+
 根据实际调试器型号选择。目前支持的调试器列表
-|调试器|
-|:----:|
-|jlink|
-|gd-link|
-|ft2232|
-|sipeed-rv-debugger|
-|altera-usb-blaster|
-|um232h|
+
+* `jlink`
+* `gd-link`
+* `ft2232`
+* `sipeed-rv-debugger`
+* `altera-usb-blaster`
+* `um232h`
+
 ## 一键调试
 
 切换到 VS CODE 左侧的 `DEBUG` 界面， 点击绿色箭头即可进行调试。
