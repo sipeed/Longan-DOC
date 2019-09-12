@@ -60,7 +60,7 @@ upload_protocol = sipeed-rv-debugger
 ```
 
 ### USB DFU 下载
-* **首次** 使用需要安装 libusb 驱动程序， 请参考此步骤 [使用 Zaidig 安装驱动](#%e4%bd%bf%e7%94%a8-zadig-%e5%ae%89%e8%a3%85%e9%a9%b1%e5%8a%a8).
+* **首次** 使用需要安装 libusb 驱动程序， 请参考此步骤 [使用 Zaidig 安装驱动](#%e4%bd%bf%e7%94%a8zadig%e5%ae%89%e8%a3%85%e9%a9%b1%e5%8a%a8).
 * 准备 USB Type-c 数据线
 * 使用数据线连接电脑与开发板
 * 修改 `platformio.ini` 文件， 添加下面一行内容：
@@ -78,7 +78,7 @@ upload_protocol = dfu
 
 ![](../../assets/pio_upload.png)
 
-## 使用 Zadig 安装驱动
+## 使用Zadig安装驱动
 PIO 内置 dfu-util 下载工具，使用此工具需要为开发板安装 libusb 驱动。（注意： 与 GD 官方驱动不同） 
 
 建议通过 Zadig 安装 winusb 驱动。[下载地址](https://github.com/pbatard/libwdi/releases/download/b721/zadig-2.4.exe)
