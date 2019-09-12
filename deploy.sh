@@ -11,7 +11,7 @@ cp -f index.html build/index.html
 cp -f assets/favicon.ico build/gitbook/images/favicon.ico
 cp -f assets/icon_sipeed.png build/gitbook/images/apple-touch-icon-precomposed-152.png
 
-git clone -b gh-pages https://github.com/sipeed/Maixduino_DOC.git ./old
+git clone -b gh-pages https://github.com/sipeed/Longan-DOC.git ./old
 rm -rf ./old/.git/
 echo "current build branch: --$curr_branch--"
 if [[ "$curr_branch" == "master" ]]; then
@@ -52,7 +52,7 @@ git config user.name $GIT_NAME
 
 git config user.email $GIT_EMAIL
 
-git remote add upstream "https://$GITHUB_TOKEN@github.com/sipeed/Maixduino_DOC.git"
+git remote add upstream "https://$GITHUB_TOKEN@github.com/sipeed/Longan-DOC.git"
 
 # comment below because we don't need history of gh-pages, and use git push --force to cover history
 # git fetch upstream
