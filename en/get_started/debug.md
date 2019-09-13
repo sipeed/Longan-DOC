@@ -12,7 +12,20 @@ Debugging Longan Nano
 |  GND   |  GND   |
 
 ## Modify the configuration file
-Modify the project configuration file `platformio.ini`, add `debug_tool = jlinkit` below , and select it according to the actual debugger model. Currently supports Jlink, GD-LINK, and other debuggers to be added.
+Modify the project configuration file `platformio.ini`, add below
+
+```ini 
+debug_tool = jlink
+``` 
+
+Select according to the actual debugger model. List of currently supported debuggers
+
+* `jlink`
+* `gd-link`
+* `ft2232`
+* `sipeed-rv-debugger`
+* `altera-usb-blaster`
+* `um232h`
 
 ## One-click debugging
 
