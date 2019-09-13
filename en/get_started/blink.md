@@ -36,7 +36,7 @@ PIO can implement setting macro definitions in the configuration file, control c
 ## One-click compilation
 
 Click on the lower left corner `Build` to build the project
-![](http://blog.sipeed.com/wp-content/uploads/2019/04/a826bb03ebfe5226fa3bcc336179e763.png)
+![](../../assets/pio_complie.png)
 
 ## Connect to the development board
 ### Serial ISP download

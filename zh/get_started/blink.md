@@ -35,7 +35,7 @@ PIO 可以在配置文件中实现设置宏定义， 控制编译流程等自定
 ## 一键编译
 
 点击左下角的 `Build` 即可构建项目
-![](/../../assets/pio_complie.png)
+![](../../assets/pio_complie.png)
 
 ## 连接开发板
 ### 串口 ISP 下载
