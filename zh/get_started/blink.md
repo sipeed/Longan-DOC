@@ -60,7 +60,7 @@ upload_protocol = sipeed-rv-debugger
 ```
 
 ### USB DFU 下载
-* **首次** 使用需要安装 libusb 驱动程序， 请参考此步骤 [使用 Zaidig 安装驱动](#%e4%bd%bf%e7%94%a8zadig%e5%ae%89%e8%a3%85%e9%a9%b1%e5%8a%a8).
+* **首次** 使用需要安装 libusb 驱动程序， 请参考此步骤 [使用 Zaidig 安装驱动](#使用zadig安装驱动).
 * 准备 USB Type-c 数据线
 * 使用数据线连接电脑与开发板
 * 修改 `platformio.ini` 文件， 添加下面一行内容：

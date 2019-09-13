@@ -61,7 +61,7 @@ upload_protocol = sipeed-rv-debugger
 ```
 
 ### USB DFU download
-* If using it for the first time then you need to install libusb driver, please refer to this guide [using Zaidig install the driver](#%e4%bd%bf%e7%94%a8zadig%e5%ae%89%e8%a3%85%e9%a9%b1%e5%8a%a8).
+* If using it for the first time then you need to install libusb driver, please refer to this guide [using Zaidig install the driver](#install-drivers-using-zadig).
 * Prepare the USB Type-C cable
 * Use a data cable to connect development board to your computer.
 * Modify the `platformio.ini` file, add the following line:
