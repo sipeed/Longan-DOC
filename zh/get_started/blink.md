@@ -35,7 +35,7 @@ PIO 可以在配置文件中实现设置宏定义， 控制编译流程等自定
 ## 一键编译
 
 点击左下角的 `Build` 即可构建项目
-![](/../../assets/pio_complie.png)
+![](../../assets/pio_complie.png)
 
 ## 连接开发板
 ### 串口 ISP 下载
@@ -60,7 +60,7 @@ upload_protocol = sipeed-rv-debugger
 ```
 
 ### USB DFU 下载
-* **首次** 使用需要安装 libusb 驱动程序， 请参考此步骤 [使用 Zaidig 安装驱动](#%e4%bd%bf%e7%94%a8zadig%e5%ae%89%e8%a3%85%e9%a9%b1%e5%8a%a8).
+* **首次** 使用需要安装 libusb 驱动程序， 请参考此步骤 [使用 Zaidig 安装驱动](#使用zadig安装驱动).
 * 准备 USB Type-c 数据线
 * 使用数据线连接电脑与开发板
 * 修改 `platformio.ini` 文件， 添加下面一行内容：
