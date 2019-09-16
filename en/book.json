@@ -21,6 +21,10 @@
                     {
                         "name": "doc",
                         "link": "https://github.com/sipeed/Longan-DOC/issues"
+                    },
+                    {
+                        "name": "Source code",
+                        "link": "https://github.com/sipeed/platform-gd32v/issues"
                     }
                 ]
             }
