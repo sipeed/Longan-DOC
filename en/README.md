@@ -2,7 +2,7 @@ Longan Documentation
 ======
 
 <div class="title_pic">
-    <img src="../assets/arduino.png" height="60">  <img src="../assets/icon_sipeed_arduino.png"  height="60">
+    <img src="../assets/sipeed_longan_logo.jpg" height="60">  <img src="../assets/icon_sipeed2.png"  height="60">
 </div>
 
 
@@ -37,3 +37,6 @@ Longan Nano supports development using the VS CODE-based under PlatformIO IDE en
 
 ![pio_debug](../assets/longan_pio_debug.jpg)
 
+## PIN Map
+
+![](http://dl.sipeed.com/LONGAN/Nano/Spec/Longan%20nano%20%E5%BC%95%E8%84%9A%E5%9B%BE.jpg)
