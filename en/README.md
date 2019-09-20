@@ -37,6 +37,6 @@ Longan Nano supports development using the VS CODE-based under PlatformIO IDE en
 
 ![pio_debug](../assets/longan_pio_debug.jpg)
 
-## PIN Map
+## Pin Map
 
-![](http://dl.sipeed.com/LONGAN/Nano/Spec/Longan%20nano%20%E5%BC%95%E8%84%9A%E5%9B%BE.jpg)
+![pinout_diagram](../assets/pinoutv1.png "Pinout Diagram")
