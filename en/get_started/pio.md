@@ -18,6 +18,11 @@ PIO currently offers both **command line** and **graphical interface** installat
 
 Click the PlatformIO logo on the left -> click New Terminal at the bottom left -> execute the following installation command in the terminal window
 
+* Release version (stable version)
+```
+platformio platform install gd32v
+```
+
 * Development version (synchronized with Github)
 ```
 platformio platform install https://github.com/sipeed/platform-gd32v
@@ -26,10 +31,6 @@ platformio platform install https://github.com/sipeed/platform-gd32v
  
 Note: Due to the domestic network environment, the installation process takes a long time, please be patient.
 
-* ~~Release version (stable version)~~ (The stable version has not been released yet, this command is invalid)
-```
-platformio platform install gd32v
-```
 
 ### Graphical interface
 
