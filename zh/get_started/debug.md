@@ -26,6 +26,7 @@ debug_tool = jlink
 * `sipeed-rv-debugger`
 * `altera-usb-blaster`
 * `um232h`
+* `rv-link`
 
 ## 一键调试
 
