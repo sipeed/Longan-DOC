@@ -37,6 +37,19 @@
 
 ## 使用 RV-LINK 调试
 
+### 连接开发板
+
+将刷好 RV-LINK 固件的开发板与待调试开发板 jtag 连线按下表连接
+
+| RV-LINK | 待调试开发板 |
+| :----: | :----: |
+|  JTDO  |  JTDO  |
+|  JTDI  |  JTDI  |
+|  JTCK  |  JTCK  |
+|  JTMS  |  JTMS  |
+|  3V3   |  3V3   |
+|  GND   |  GND   | 
+
 ### 在 PlatformIO IDE 中使用 RV-LINK
 
 RV-LINK 在 PlatformIO IDE 可以和其他调试器一样，支持一键启动调试。
