@@ -28,7 +28,7 @@ platform = gd32v          ;Platform, choose gd32v
 framework = arduino       ;Optional gd32vf103-sdk or arduino
 board = sipeed-longan-nano ; Development board
 monitor_speed = 115200     ; Serial monitor baudrate
-upload_tool = serial       ; Download tool Default serial port, optional jlink, gd-link, dfu, etc.
+upload_protocol = serial       ; Download tool Default serial port, optional jlink, gd-link, dfu, etc.
 debug_tool = jlink         ; Debugging tool default jlink, optional sipeed-rv-debugger, etc.
 ```
 PIO can implement setting macro definitions in the configuration file, control custom functions such as compilation process, etc. For advanced usage, please refer to [PIO official documentation](https://docs.platformio.org/en/latest/projectconf.html).
