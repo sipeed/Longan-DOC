@@ -26,6 +26,7 @@ Select according to the actual debugger model. List of currently supported debug
 * `sipeed-rv-debugger`
 * `altera-usb-blaster`
 * `um232h`
+* `RV-Link`
 
 ## One-click debugging
 
