@@ -21,7 +21,7 @@
     如下图所示：
     ![](../../assets/pio_open_rvlink.png)
 
-    通常使用 DFU 方式烧录固件，**不需要**修改配置文件。
+    通常使用 DFU 方式烧录固件，**不需要**修改配置文件。(使用 DFU 方式下载请安装 libusb 驱动, 参考[使用Zadig安装驱动](blink.md/#使用zadig安装驱动))
     
     如果需要更改烧录方式，可以通过修改 `platformio.ini` 文件来修改， 具体配置方式请参考：[修改工程配置文件](blink.md/#工程配置文件) 
 
@@ -49,6 +49,10 @@
 |  JTMS  |  JTMS  |
 |  3V3   |  3V3   |
 |  GND   |  GND   | 
+
+#### WIN7 用户安装 GD 串口驱动
+
+见此链接[安装 USB 串口驱动](https://gitee.com/zoomdy/RV-LINK/wikis/GDB%20%E4%BD%BF%E7%94%A8%20RV-LINK%20%E4%BB%BF%E7%9C%9F%E5%99%A8%E8%B0%83%E8%AF%95%20RISC-V%20%E7%A8%8B%E5%BA%8F?sort_id=1667650#%E5%AE%89%E8%A3%85-usb-%E4%B8%B2%E5%8F%A3%E9%A9%B1%E5%8A%A8)
 
 ### 在 PlatformIO IDE 中使用 RV-LINK
 
