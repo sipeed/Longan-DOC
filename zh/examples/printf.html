@@ -1,0 +1,510 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>串口输出 · Longan 文档</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="sipeed">
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search-title/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../styles/website.css">
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="badapple.html" />
+    
+    
+    <link rel="prev" href="../get_started/rv-link.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+    <nav role="navigation" class="autoshow">
+        <ul class="summary">
+        <li><a href="https://www.sipeed.com" class="btn" target="_blank"><img src="/assets/icon_sipeed2.png" height="30" /></a></li>
+        <li><a href="#" class="btn" onclick="toggleLanguage()">English</a></li>        
+        
+        
+        <li class="version-link">
+            <a href="#" class="btn" style="color:#444"></i>Version: <span style="font-weight: bold; display: inline"><i class='fa fa-angle-down'></i></span></a>
+            <ul class="hovershow">
+                
+                <li><a href="/zh/" class="btn">Version: <span style="font-weight:bold; display: inline">master</span></a></li>
+                
+                <li><a href="/dev/zh/" class="btn">Version: <span style="font-weight:bold; display: inline">dev</span></a></li>
+                
+            </ul>
+        </li>                
+        
+                 
+        
+        
+        <li><a href="http://blog.sipeed.com" class="btn"><i ></i>博客</a></li>
+        
+    
+        
+        <li><a href="https://bbs.sipeed.com/" class="btn"><i ></i>论坛</a></li>
+        
+    
+        
+        <li>
+            <a href="#" class="btn"><i ></i>反馈</a>
+            <ul>
+                
+                <li><a href="https://github.com/sipeed/Longan-DOC/issues" class="btn">文档</a></li>
+                
+                <li><a href="https://github.com/sipeed/platform-gd32v/issues" class="btn">源码</a></li>
+                
+            </ul>
+        </li>                
+        
+          
+        </ul>
+    </nav>
+    
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        <li class="header">简介</li>
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    关于Longan
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">准备</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="../get_started/pio.html">
+            
+                <a href="../get_started/pio.html">
+            
+                    
+                    PIO 配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="../get_started/blink.html">
+            
+                <a href="../get_started/blink.html">
+            
+                    
+                    Blink闪灯
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="../get_started/debug.html">
+            
+                <a href="../get_started/debug.html">
+            
+                    
+                    DEBUG 调试
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.3.1" data-path="../get_started/sipeed-debugger.html">
+            
+                <a href="../get_started/sipeed-debugger.html">
+            
+                    
+                    使用 Sipeed 调试器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.2" data-path="../get_started/rv-link.html">
+            
+                <a href="../get_started/rv-link.html">
+            
+                    
+                    使用 RV-LINK
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="header">示例</li>
+        
+        
+    
+        <li class="chapter active" data-level="3.1" data-path="printf.html">
+            
+                <a href="printf.html">
+            
+                    
+                    串口输出
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="badapple.html">
+            
+                <a href="badapple.html">
+            
+                    
+                    播放Badapple
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="sipeed-navbar navbar-collapse" id="navbar" role="navigation">
+    <ul class="nav navbar-nav">
+        <li><a href="https://www.sipeed.com" class="btn" target="_blank"><img src="/assets/icon_sipeed2.png" height="30" /></a></li>
+        <li><a href="#" class="btn autohide" onclick="toggleLanguage()">English</a></li>           
+
+    
+    <li><a href="http://blog.sipeed.com" class="btn autohide" target="_blank"><i ></i>博客</a></li>
+    
+
+    
+    <li><a href="https://bbs.sipeed.com/" class="btn autohide" target="_blank"><i ></i>论坛</a></li>
+    
+
+    
+    <li>
+        <a href="#" class="btn autohide"><i ></i>反馈</a>
+        <ul class="hovershow">
+            
+            <li><a href="https://github.com/sipeed/Longan-DOC/issues" class="btn" target="_blank">文档</a></li>
+            
+            <li><a href="https://github.com/sipeed/platform-gd32v/issues" class="btn" target="_blank">源码</a></li>
+            
+        </ul>
+    </li>                
+    
+    
+
+    
+    <li class="version-link">
+        <a class="btn" >版本 <span style="font-weight:bold"><i class='fa fa-angle-down'></i></span></a>
+        <ul class="hovershow">
+            
+            <li><a href="/zh/" class="btn">版本: <span style="font-weight:bold">master</span></a></li>
+            
+            <li><a href="/dev/zh/" class="btn">版本: <span style="font-weight:bold">dev</span></a></li>
+            
+        </ul>
+    </li>                
+    
+   
+    </ul>
+</div>
+<div class="book-header" role="navigation">
+    
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >串口输出</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#&#x4E32;&#x53E3;&#x6253;&#x5370;"><b> </b>&#x4E32;&#x53E3;&#x6253;&#x5370;</a></li></ul></div><a href="#&#x4E32;&#x53E3;&#x6253;&#x5370;" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="&#x4E32;&#x53E3;&#x6253;&#x5370;"><a name="&#x4E32;&#x53E3;&#x6253;&#x5370;" class="anchor-navigation-ex-anchor" href="#&#x4E32;&#x53E3;&#x6253;&#x5370;"><i class="fa fa-link" aria-hidden="true"></i></a> &#x4E32;&#x53E3;&#x6253;&#x5370;</h1>
+<p>&#x5F88;&#x591A;&#x65F6;&#x5019;&#xFF0C;&#x4E32;&#x53E3;&#x6253;&#x5370;&#x90FD;&#x662F;&#x4E00;&#x4E2A;&#x975E;&#x5E38;&#x65B9;&#x4FBF;&#x7684;&#x8C03;&#x8BD5;&#x624B;&#x6BB5;&#xFF0C;&#x901A;&#x8FC7;&#x4E32;&#x53E3;&#x6253;&#x5370;&#x7684;&#x4FE1;&#x606F;&#xFF0C;&#x53EF;&#x4EE5;&#x65B9;&#x4FBF;&#x7684;&#x5B9A;&#x4F4D;&#x7A0B;&#x5E8F;&#x9519;&#x8BEF;&#x4F4D;&#x7F6E;</p>
+<p>&#x672C;&#x6587;&#x57FA;&#x4E8E; longan nano &#x6F14;&#x793A;&#x5982;&#x4F55;&#x5B9E;&#x73B0; printf &#x901A;&#x8FC7;&#x4E32;&#x53E3;&#x6253;&#x5370;</p>
+<p>&#x672C;&#x6587;&#x9009;&#x62E9;&#x4E32;&#x53E3;0&#x4F5C;&#x4E3A;&#x4E32;&#x53E3;&#x6253;&#x5370;&#x4FE1;&#x606F;&#x7684;&#x7AEF;&#x53E3;&#xFF0C;&#x5916;&#x8BBE;&#x4F7F;&#x7528;&#x524D;&#xFF0C;&#x81EA;&#x7136;&#x9700;&#x8981;&#x8FDB;&#x884C;&#x521D;&#x59CB;&#x5316;</p>
+<pre><code class="lang-c"><span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">init_uart0</span><span class="hljs-params">(<span class="hljs-keyword">void</span>)</span>
+</span>{    
+    <span class="hljs-comment">/* enable GPIO clock */</span>
+    rcu_periph_clock_enable(RCU_GPIOA);
+    <span class="hljs-comment">/* enable USART clock */</span>
+    rcu_periph_clock_enable(RCU_USART0);
+
+    <span class="hljs-comment">/* connect port to USARTx_Tx */</span>
+    gpio_init(GPIOA, GPIO_MODE_AF_PP, GPIO_OSPEED_50MHZ, GPIO_PIN_9);
+    <span class="hljs-comment">/* connect port to USARTx_Rx */</span>
+    gpio_init(GPIOA, GPIO_MODE_IN_FLOATING, GPIO_OSPEED_50MHZ, GPIO_PIN_10);
+
+    <span class="hljs-comment">/* USART configure */</span>
+    usart_deinit(USART0);
+    usart_baudrate_set(USART0, <span class="hljs-number">115200U</span>);
+    usart_word_length_set(USART0, USART_WL_8BIT);
+    usart_stop_bit_set(USART0, USART_STB_1BIT);
+    usart_parity_config(USART0, USART_PM_NONE);
+    usart_hardware_flow_rts_config(USART0, USART_RTS_DISABLE);
+    usart_hardware_flow_cts_config(USART0, USART_CTS_DISABLE);
+    usart_receive_config(USART0, USART_RECEIVE_ENABLE);
+    usart_transmit_config(USART0, USART_TRANSMIT_ENABLE);
+    usart_enable(USART0);
+
+    usart_interrupt_enable(USART0, USART_INT_RBNE);
+}
+</code></pre>
+<p>&#x8FD9;&#x91CC;&#x9996;&#x5148;&#x7684;&#x5F00;&#x542F;&#x4E86;&#x7AEF;&#x53E3;&#x65F6;&#x949F;&#x548C;&#x4E32;&#x53E3;&#x65F6;&#x949F;&#xFF0C;&#x5728;&#x521D;&#x59CB;&#x5316;&#x5B8C;&#x7BA1;&#x811A;&#x540E;&#xFF0C;&#x5C31;&#x8FDB;&#x884C;&#x4E86;&#x4E32;&#x53E3;&#x7684;&#x529F;&#x80FD;&#x914D;&#x7F6E;</p>
+<p>&#x6211;&#x4EEC;&#x4E00;&#x822C;&#x6BD4;&#x8F83;&#x5173;&#x5FC3;&#x7684;&#x5C31;&#x662F;&#x4E32;&#x53E3;&#x7684;&#x6CE2;&#x7279;&#x7387;&#xFF0C;&#x8FD9;&#x91CC;&#x8BBE;&#x7F6E;&#x6210;&#x4E86; 115200</p>
+<p>&#x7136;&#x540E;&#x6211;&#x4EEC;&#x8FD8;&#x9700;&#x8981;&#x91CD;&#x65B0;&#x5B9E;&#x73B0; _put_char &#xFF0C;&#x5C06; printf &#x91CD;&#x6620;&#x5C04;</p>
+<pre><code class="lang-c"><span class="hljs-keyword">int</span> _put_char(<span class="hljs-keyword">int</span> ch)
+{
+    usart_data_transmit(USART0, (<span class="hljs-keyword">uint8_t</span>) ch );
+    <span class="hljs-keyword">while</span> ( usart_flag_get(USART0, USART_FLAG_TBE)== RESET){
+    }
+
+    <span class="hljs-keyword">return</span> ch;
+}
+</code></pre>
+<p>&#x8FD9;&#x6837;&#x5C31;&#x53EF;&#x4EE5;&#x5FEB;&#x4E50;&#x7684;&#x4F7F;&#x7528; printf &#x4E86;</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../get_started/rv-link.html" class="navigation navigation-prev " aria-label="Previous page: 使用 RV-LINK">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="badapple.html" class="navigation navigation-next " aria-label="Next page: 播放Badapple">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"串口输出","level":"3.1","depth":1,"next":{"title":"播放Badapple","level":"3.2","depth":1,"path":"examples/badapple.md","ref":"examples/badapple.md","articles":[]},"previous":{"title":"使用 RV-LINK","level":"2.3.2","depth":2,"path":"get_started/rv-link.md","ref":"get_started/rv-link.md","articles":[]},"dir":"ltr"},"config":{"plugins":["my-toolbar","-lunr","-search","search-title","anchor-navigation-ex","anchorjs","sharing","splitter","edit-link","ga","expandable-chapters-small@git+https://github.com/sipeed/gitbook-plugin-expandable-chapters-small.git"],"styles":{"website":"./styles/website.css"},"pluginsConfig":{"github":{"url":"https://github.com/sipeed/"},"splitter":{},"search":{"maxIndexSize":1000000000},"lunr":{"maxIndexSize":1000000000},"fontsettings":{"theme":"white","family":"sans","size":2},"search-title":{},"highlight":{},"anchor-navigation-ex":{"associatedWithSummary":false,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":false,"pageTop":{"level1Icon":"fa fa-angle-double-right","level2Icon":"fa fa-angle-double-right","level3Icon":"fa fa-angle-double-right","showLevelIcon":true},"printLog":false,"showGoTop":true,"showLevel":true},"expandable-chapters-small":{},"my-toolbar":{"buttons":[{"label":"Github","text":" ","icon":"fa fa-github","position":"left","target":"_blank","url":"https://github.com/sipeed/"}]},"ga":{"configuration":"auto","token":"UA-119047820-3"},"sharing":{"qq":false,"all":["weibo","facebook","google","twitter","vk"],"douban":false,"facebook":true,"weibo":true,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":false,"google":true,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"edit-link":{"label":"","base":"https://github.com/sipeed/Longan-DOC/blob/master"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchorjs":{}},"theme":"default","author":"sipeed","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"items":[{"name":"博客","link":"http://blog.sipeed.com"},{"name":"论坛","link":"https://bbs.sipeed.com/"},{"name":"反馈","links":[{"name":"文档","link":"https://github.com/sipeed/Longan-DOC/issues"},{"name":"源码","link":"https://github.com/sipeed/platform-gd32v/issues"}]}],"version":[{"name":"<i class='fa fa-angle-down'></i>","links":[{"name":"master","link":"/zh/"},{"name":"dev","link":"/dev/zh/"}]}]},"title":"Longan 文档","language":"zh-hans","gitbook":"*","description":"Longan 文档"},"file":{"path":"examples/printf.md","mtime":"2020-02-16T09:15:25.985Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-02-16T09:16:22.847Z"},"basePath":"..","book":{"language":"zh"}});
+        });
+    </script>
+</div>
+
+        
+    
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-my-toolbar/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search-title/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search-title/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-anchorjs/anchor.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-anchorjs/anchor-style.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-edit-link/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-ga/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    <script type="text/javascript">
+    function toggleLanguage () {
+            var path = location.href;
+            // console.log(path);
+            if (path.indexOf('/zh') !== -1) {
+                path = path.replace(/\/zh[\/$\s]/i, '/en/');
+            } else if (path.indexOf('/en') !== -1) {
+                path = path.replace(/\/en[\/$\s]/i, '/zh/');
+            }
+            // console.log('after: ' + path);    
+            location.assign(path);
+    }
+    </script>
+
+    </body>
+</html>
+

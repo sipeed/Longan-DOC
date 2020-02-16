@@ -1,0 +1,550 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Blink闪灯 · Longan 文档</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="sipeed">
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search-title/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../styles/website.css">
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="debug.html" />
+    
+    
+    <link rel="prev" href="pio.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+    <nav role="navigation" class="autoshow">
+        <ul class="summary">
+        <li><a href="https://www.sipeed.com" class="btn" target="_blank"><img src="/assets/icon_sipeed2.png" height="30" /></a></li>
+        <li><a href="#" class="btn" onclick="toggleLanguage()">English</a></li>        
+        
+        
+        <li class="version-link">
+            <a href="#" class="btn" style="color:#444"></i>Version: <span style="font-weight: bold; display: inline"><i class='fa fa-angle-down'></i></span></a>
+            <ul class="hovershow">
+                
+                <li><a href="/zh/" class="btn">Version: <span style="font-weight:bold; display: inline">master</span></a></li>
+                
+                <li><a href="/dev/zh/" class="btn">Version: <span style="font-weight:bold; display: inline">dev</span></a></li>
+                
+            </ul>
+        </li>                
+        
+                 
+        
+        
+        <li><a href="http://blog.sipeed.com" class="btn"><i ></i>博客</a></li>
+        
+    
+        
+        <li><a href="https://bbs.sipeed.com/" class="btn"><i ></i>论坛</a></li>
+        
+    
+        
+        <li>
+            <a href="#" class="btn"><i ></i>反馈</a>
+            <ul>
+                
+                <li><a href="https://github.com/sipeed/Longan-DOC/issues" class="btn">文档</a></li>
+                
+                <li><a href="https://github.com/sipeed/platform-gd32v/issues" class="btn">源码</a></li>
+                
+            </ul>
+        </li>                
+        
+          
+        </ul>
+    </nav>
+    
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        <li class="header">简介</li>
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    关于Longan
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">准备</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="pio.html">
+            
+                <a href="pio.html">
+            
+                    
+                    PIO 配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="2.2" data-path="blink.html">
+            
+                <a href="blink.html">
+            
+                    
+                    Blink闪灯
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="debug.html">
+            
+                <a href="debug.html">
+            
+                    
+                    DEBUG 调试
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.3.1" data-path="sipeed-debugger.html">
+            
+                <a href="sipeed-debugger.html">
+            
+                    
+                    使用 Sipeed 调试器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.2" data-path="rv-link.html">
+            
+                <a href="rv-link.html">
+            
+                    
+                    使用 RV-LINK
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="header">示例</li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="../examples/printf.html">
+            
+                <a href="../examples/printf.html">
+            
+                    
+                    串口输出
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="../examples/badapple.html">
+            
+                <a href="../examples/badapple.html">
+            
+                    
+                    播放Badapple
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="sipeed-navbar navbar-collapse" id="navbar" role="navigation">
+    <ul class="nav navbar-nav">
+        <li><a href="https://www.sipeed.com" class="btn" target="_blank"><img src="/assets/icon_sipeed2.png" height="30" /></a></li>
+        <li><a href="#" class="btn autohide" onclick="toggleLanguage()">English</a></li>           
+
+    
+    <li><a href="http://blog.sipeed.com" class="btn autohide" target="_blank"><i ></i>博客</a></li>
+    
+
+    
+    <li><a href="https://bbs.sipeed.com/" class="btn autohide" target="_blank"><i ></i>论坛</a></li>
+    
+
+    
+    <li>
+        <a href="#" class="btn autohide"><i ></i>反馈</a>
+        <ul class="hovershow">
+            
+            <li><a href="https://github.com/sipeed/Longan-DOC/issues" class="btn" target="_blank">文档</a></li>
+            
+            <li><a href="https://github.com/sipeed/platform-gd32v/issues" class="btn" target="_blank">源码</a></li>
+            
+        </ul>
+    </li>                
+    
+    
+
+    
+    <li class="version-link">
+        <a class="btn" >版本 <span style="font-weight:bold"><i class='fa fa-angle-down'></i></span></a>
+        <ul class="hovershow">
+            
+            <li><a href="/zh/" class="btn">版本: <span style="font-weight:bold">master</span></a></li>
+            
+            <li><a href="/dev/zh/" class="btn">版本: <span style="font-weight:bold">dev</span></a></li>
+            
+        </ul>
+    </li>                
+    
+   
+    </ul>
+</div>
+<div class="book-header" role="navigation">
+    
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Blink闪灯</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#blink-&#x95EA;&#x706F;&#x7A0B;&#x5E8F;"><b> </b>Blink &#x95EA;&#x706F;&#x7A0B;&#x5E8F;</a></li><ul><li><span class="title-icon "></span><a href="#&#x521B;&#x5EFA;-blink-&#x5DE5;&#x7A0B;"><b>1. </b>&#x521B;&#x5EFA; Blink &#x5DE5;&#x7A0B;</a></li><li><span class="title-icon "></span><a href="#&#x5DE5;&#x7A0B;&#x914D;&#x7F6E;&#x6587;&#x4EF6;"><b>2. </b>&#x5DE5;&#x7A0B;&#x914D;&#x7F6E;&#x6587;&#x4EF6;</a></li><li><span class="title-icon "></span><a href="#&#x4E00;&#x952E;&#x7F16;&#x8BD1;"><b>3. </b>&#x4E00;&#x952E;&#x7F16;&#x8BD1;</a></li><li><span class="title-icon "></span><a href="#&#x8FDE;&#x63A5;&#x5F00;&#x53D1;&#x677F;"><b>4. </b>&#x8FDE;&#x63A5;&#x5F00;&#x53D1;&#x677F;</a></li><ul><li><span class="title-icon "></span><a href="#&#x4E32;&#x53E3;-isp-&#x4E0B;&#x8F7D;"><b>4.1. </b>&#x4E32;&#x53E3; ISP &#x4E0B;&#x8F7D;</a></li><li><span class="title-icon "></span><a href="#jtag-&#x4E0B;&#x8F7D;"><b>4.2. </b>JTAG &#x4E0B;&#x8F7D;</a></li><li><span class="title-icon "></span><a href="#usb-dfu-&#x4E0B;&#x8F7D;"><b>4.3. </b>USB DFU &#x4E0B;&#x8F7D;</a></li></ul><li><span class="title-icon "></span><a href="#&#x4E00;&#x952E;&#x4E0B;&#x8F7D;"><b>5. </b>&#x4E00;&#x952E;&#x4E0B;&#x8F7D;</a></li><li><span class="title-icon "></span><a href="#&#x4F7F;&#x7528;zadig&#x5B89;&#x88C5;&#x9A71;&#x52A8;"><b>6. </b>&#x4F7F;&#x7528;Zadig&#x5B89;&#x88C5;&#x9A71;&#x52A8;</a></li><li><span class="title-icon "></span><a href="#dfu-&#x56FE;&#x5F62;&#x754C;&#x9762;&#x4E0B;&#x8F7D;"><b>7. </b>DFU &#x56FE;&#x5F62;&#x754C;&#x9762;&#x4E0B;&#x8F7D;</a></li></ul></ul></div><a href="#blink-&#x95EA;&#x706F;&#x7A0B;&#x5E8F;" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="blink-&#x95EA;&#x706F;&#x7A0B;&#x5E8F;"><a name="blink-&#x95EA;&#x706F;&#x7A0B;&#x5E8F;" class="anchor-navigation-ex-anchor" href="#blink-&#x95EA;&#x706F;&#x7A0B;&#x5E8F;"><i class="fa fa-link" aria-hidden="true"></i></a> Blink &#x95EA;&#x706F;&#x7A0B;&#x5E8F;</h1>
+<h2 id="&#x521B;&#x5EFA;-blink-&#x5DE5;&#x7A0B;"><a name="&#x521B;&#x5EFA;-blink-&#x5DE5;&#x7A0B;" class="anchor-navigation-ex-anchor" href="#&#x521B;&#x5EFA;-blink-&#x5DE5;&#x7A0B;"><i class="fa fa-link" aria-hidden="true"></i></a>1. &#x521B;&#x5EFA; Blink &#x5DE5;&#x7A0B;</h2>
+<ul>
+<li>&#x6253;&#x5F00; PIO &#x4E3B;&#x9875; &#x9009;&#x62E9; <code>Project Examples</code></li>
+</ul>
+<p><img src="http://blog.sipeed.com/wp-content/uploads/2019/04/d977e844490e6ccc4625f701883a29f5.png" alt=""></p>
+<ul>
+<li><p>&#x9009;&#x62E9; <code>arduino blink</code> &#x70B9;&#x51FB; <code>Import</code> &#x5BFC;&#x5165;&#x793A;&#x4F8B;&#x7A0B;&#x5E8F; &#xFF08;&#x521D;&#x6B21;&#x5BFC;&#x5165;&#x9700;&#x8981;&#x4E0B;&#x8F7D;&#x67B6;&#x6784;&#x6587;&#x4EF6;&#x53CA;&#x5DE5;&#x5177;&#xFF0C;&#x9700;&#x8981;&#x7B49;&#x5F85;&#x8F83;&#x957F;&#x65F6;&#x95F4;&#xFF09;
+<img src="http://blog.sipeed.com/wp-content/uploads/2019/04/82943a6b74077e6210e2d9421cb5438f.png" alt=""></p>
+</li>
+<li><p>&#x5BFC;&#x5165;&#x6210;&#x529F;&#x540E;&#x5373;&#x53EF;&#x89C1;&#x5230;&#x793A;&#x4F8B;&#x5DE5;&#x7A0B;
+<img src="http://blog.sipeed.com/wp-content/uploads/2019/04/1262373ca7b0b483e30dac1124adaabf.png" alt=""></p>
+</li>
+</ul>
+<h2 id="&#x5DE5;&#x7A0B;&#x914D;&#x7F6E;&#x6587;&#x4EF6;"><a name="&#x5DE5;&#x7A0B;&#x914D;&#x7F6E;&#x6587;&#x4EF6;" class="anchor-navigation-ex-anchor" href="#&#x5DE5;&#x7A0B;&#x914D;&#x7F6E;&#x6587;&#x4EF6;"><i class="fa fa-link" aria-hidden="true"></i></a>2. &#x5DE5;&#x7A0B;&#x914D;&#x7F6E;&#x6587;&#x4EF6;</h2>
+<ul>
+<li>&#x6211;&#x4EEC;&#x9996;&#x5148;&#x9700;&#x8981;&#x7F16;&#x8F91;&#x5DE5;&#x7A0B;&#x914D;&#x7F6E;&#x6587;&#x4EF6; <code>platformio.ini</code> &#x6839;&#x636E;&#x81EA;&#x5DF1;&#x7684;&#x5F00;&#x53D1;&#x677F;&#x578B;&#x53F7;&#xFF0C;&#x5220;&#x6389;&#x5176;&#x4ED6;&#x5F00;&#x53D1;&#x677F;&#x73AF;&#x5883;&#x3002;</li>
+</ul>
+<p><img src="../../assets/pio_ini_cfg.png" alt=""></p>
+<p>&#x914D;&#x7F6E;&#x793A;&#x4F8B;</p>
+<pre><code class="lang-ini"><span class="hljs-section">[env:sipeed-longan-nano]</span>
+<span class="hljs-attr">platform</span> = gd32v          ;&#x5E73;&#x53F0;&#xFF0C;&#x9009;&#x62E9;gd32v
+<span class="hljs-attr">framework</span> = ardui<span class="hljs-literal">no</span>       ;&#x53EF;&#x9009; gd32vf103-sdk &#x6216; ardui<span class="hljs-literal">no</span>
+<span class="hljs-attr">board</span> = sipeed-longan-na<span class="hljs-literal">no</span> ; &#x5F00;&#x53D1;&#x677F;
+<span class="hljs-attr">monitor_speed</span> = <span class="hljs-number">115200</span>     ; &#x4E32;&#x53E3;&#x76D1;&#x89C6;&#x5668;&#x6CE2;&#x7279;&#x7387;
+<span class="hljs-attr">upload_protocol</span> = serial   ; &#x4E0B;&#x8F7D;&#x5DE5;&#x5177; &#x9ED8;&#x8BA4;&#x4E32;&#x53E3;&#xFF0C; &#x53EF;&#x9009; dfu&#x3001;jlink&#x3001;gd-link &#x7B49;
+<span class="hljs-attr">debug_tool</span> = jlink         ; &#x8C03;&#x8BD5;&#x5DE5;&#x5177; &#x9ED8;&#x8BA4;jlink &#xFF0C;&#x53EF;&#x9009; sipeed-rv-debugger &#x7B49;
+</code></pre>
+<p>PIO &#x53EF;&#x4EE5;&#x5728;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x4E2D;&#x5B9E;&#x73B0;&#x8BBE;&#x7F6E;&#x5B8F;&#x5B9A;&#x4E49;&#xFF0C; &#x63A7;&#x5236;&#x7F16;&#x8BD1;&#x6D41;&#x7A0B;&#x7B49;&#x81EA;&#x5B9A;&#x4E49;&#x529F;&#x80FD;&#xFF0C;&#x9AD8;&#x7EA7;&#x7528;&#x6CD5;&#x8BF7;&#x53C2;&#x9605; <a href="https://docs.platformio.org/en/latest/projectconf.html" target="_blank">PIO &#x5B98;&#x65B9;&#x6587;&#x6863;</a>.</p>
+<h2 id="&#x4E00;&#x952E;&#x7F16;&#x8BD1;"><a name="&#x4E00;&#x952E;&#x7F16;&#x8BD1;" class="anchor-navigation-ex-anchor" href="#&#x4E00;&#x952E;&#x7F16;&#x8BD1;"><i class="fa fa-link" aria-hidden="true"></i></a>3. &#x4E00;&#x952E;&#x7F16;&#x8BD1;</h2>
+<p>&#x70B9;&#x51FB;&#x5DE6;&#x4E0B;&#x89D2;&#x7684; <code>Build</code> &#x5373;&#x53EF;&#x6784;&#x5EFA;&#x9879;&#x76EE;
+<img src="../../assets/pio_complie.png" alt=""></p>
+<h2 id="&#x8FDE;&#x63A5;&#x5F00;&#x53D1;&#x677F;"><a name="&#x8FDE;&#x63A5;&#x5F00;&#x53D1;&#x677F;" class="anchor-navigation-ex-anchor" href="#&#x8FDE;&#x63A5;&#x5F00;&#x53D1;&#x677F;"><i class="fa fa-link" aria-hidden="true"></i></a>4. &#x8FDE;&#x63A5;&#x5F00;&#x53D1;&#x677F;</h2>
+<h3 id="&#x4E32;&#x53E3;-isp-&#x4E0B;&#x8F7D;"><a name="&#x4E32;&#x53E3;-isp-&#x4E0B;&#x8F7D;" class="anchor-navigation-ex-anchor" href="#&#x4E32;&#x53E3;-isp-&#x4E0B;&#x8F7D;"><i class="fa fa-link" aria-hidden="true"></i></a>4.1. &#x4E32;&#x53E3; ISP &#x4E0B;&#x8F7D;</h3>
+<ul>
+<li>&#x51C6;&#x5907; USB &#x8F6C; &#x4E32;&#x53E3;&#x4E0B;&#x8F7D;&#x5668;</li>
+<li>&#x8FDE;&#x63A5;&#x5F00;&#x53D1;&#x677F;&#x4E0E;&#x4E0B;&#x8F7D;&#x5668;</li>
+<li>&#x4FEE;&#x6539; <code>platformio.ini</code> &#x6587;&#x4EF6;&#xFF0C; &#x6DFB;&#x52A0;&#x4E0B;&#x9762;&#x4E00;&#x884C;&#x5185;&#x5BB9;&#xFF1A;<pre><code class="lang-ini"><span class="hljs-attr">upload_protocol</span> = serial
+</code></pre>
+</li>
+<li>&#x5F00;&#x53D1;&#x677F;&#x6309;&#x4F4F; <code>BOOT</code> &#x952E;&#xFF0C;&#x518D;&#x6309; <code>RESET</code> &#x952E;&#x91CD;&#x542F;&#x5F00;&#x53D1;&#x677F;&#x540E;&#x518D;&#x677E;&#x5F00; <code>BOOT</code> &#x952E;&#xFF0C;&#x8FDB;&#x5165;&#x4E0B;&#x8F7D;&#x6A21;&#x5F0F;&#x3002;</li>
+</ul>
+<h3 id="jtag-&#x4E0B;&#x8F7D;"><a name="jtag-&#x4E0B;&#x8F7D;" class="anchor-navigation-ex-anchor" href="#jtag-&#x4E0B;&#x8F7D;"><i class="fa fa-link" aria-hidden="true"></i></a>4.2. JTAG &#x4E0B;&#x8F7D;</h3>
+<ul>
+<li>&#x51C6;&#x5907;J-link &#x6216; Sipeed RV &#x8C03;&#x8BD5;&#x5668;</li>
+<li>&#x8FDE;&#x63A5;&#x5F00;&#x53D1;&#x677F;</li>
+<li>&#x4FEE;&#x6539; <code>platformio.ini</code> &#x6587;&#x4EF6;&#xFF0C; &#x6DFB;&#x52A0;&#x4E0B;&#x9762;&#x4E00;&#x884C;&#x5185;&#x5BB9;&#xFF1A;<pre><code class="lang-ini"><span class="hljs-attr">upload_protocol</span> = jlink
+</code></pre>
+&#x6216;&#x8005;<pre><code class="lang-ini"><span class="hljs-attr">upload_protocol</span> = sipeed-rv-debugger
+</code></pre>
+</li>
+</ul>
+<h3 id="usb-dfu-&#x4E0B;&#x8F7D;"><a name="usb-dfu-&#x4E0B;&#x8F7D;" class="anchor-navigation-ex-anchor" href="#usb-dfu-&#x4E0B;&#x8F7D;"><i class="fa fa-link" aria-hidden="true"></i></a>4.3. USB DFU &#x4E0B;&#x8F7D;</h3>
+<ul>
+<li><strong>&#x9996;&#x6B21;</strong> &#x4F7F;&#x7528;&#x9700;&#x8981;&#x5B89;&#x88C5; libusb &#x9A71;&#x52A8;&#x7A0B;&#x5E8F;&#xFF0C; &#x8BF7;&#x53C2;&#x8003;&#x6B64;&#x6B65;&#x9AA4; <a href="#&#x4F7F;&#x7528;zadig&#x5B89;&#x88C5;&#x9A71;&#x52A8;">&#x4F7F;&#x7528; Zaidig &#x5B89;&#x88C5;&#x9A71;&#x52A8;</a>.</li>
+<li>&#x51C6;&#x5907; USB Type-c &#x6570;&#x636E;&#x7EBF;</li>
+<li>&#x4F7F;&#x7528;&#x6570;&#x636E;&#x7EBF;&#x8FDE;&#x63A5;&#x7535;&#x8111;&#x4E0E;&#x5F00;&#x53D1;&#x677F;</li>
+<li>&#x4FEE;&#x6539; <code>platformio.ini</code> &#x6587;&#x4EF6;&#xFF0C; &#x6DFB;&#x52A0;&#x4E0B;&#x9762;&#x4E00;&#x884C;&#x5185;&#x5BB9;&#xFF1A;<pre><code class="lang-ini"><span class="hljs-attr">upload_protocol</span> = dfu
+</code></pre>
+</li>
+<li>&#x5F00;&#x53D1;&#x677F;&#x6309;&#x4F4F; <code>BOOT</code> &#x952E;&#xFF0C;&#x518D;&#x6309; <code>RESET</code> &#x952E;&#x91CD;&#x542F;&#x5F00;&#x53D1;&#x677F;&#x540E;&#x518D;&#x677E;&#x5F00; <code>BOOT</code> &#x952E;&#xFF0C;&#x8FDB;&#x5165; DFU &#x6A21;&#x5F0F;&#x3002;</li>
+</ul>
+<h2 id="&#x4E00;&#x952E;&#x4E0B;&#x8F7D;"><a name="&#x4E00;&#x952E;&#x4E0B;&#x8F7D;" class="anchor-navigation-ex-anchor" href="#&#x4E00;&#x952E;&#x4E0B;&#x8F7D;"><i class="fa fa-link" aria-hidden="true"></i></a>5. &#x4E00;&#x952E;&#x4E0B;&#x8F7D;</h2>
+<p>&#x6309;&#x7167;&#x4E0A;&#x9762;&#x6B65;&#x9AA4;&#x9009;&#x62E9;&#x597D;&#x4E0B;&#x8F7D;&#x65B9;&#x5F0F;&#x540E;&#xFF0C;&#x5373;&#x53EF;&#x4F7F;&#x7528; PIO &#x5185;&#x7F6E;&#x5DE5;&#x5177;&#x4E00;&#x952E;&#x4E0B;&#x8F7D;&#x3002;</p>
+<p>&#x70B9;&#x51FB;&#x5DE6;&#x4E0B;&#x89D2;&#x7684; <code>Upload</code> &#x5373;&#x53EF;&#x5411;&#x5F00;&#x53D1;&#x677F;&#x4E0A;&#x4F20;&#x7A0B;&#x5E8F;&#x3002;</p>
+<p><img src="../../assets/pio_upload.png" alt=""></p>
+<h2 id="&#x4F7F;&#x7528;zadig&#x5B89;&#x88C5;&#x9A71;&#x52A8;"><a name="&#x4F7F;&#x7528;zadig&#x5B89;&#x88C5;&#x9A71;&#x52A8;" class="anchor-navigation-ex-anchor" href="#&#x4F7F;&#x7528;zadig&#x5B89;&#x88C5;&#x9A71;&#x52A8;"><i class="fa fa-link" aria-hidden="true"></i></a>6. &#x4F7F;&#x7528;Zadig&#x5B89;&#x88C5;&#x9A71;&#x52A8;</h2>
+<p>PIO &#x5185;&#x7F6E; dfu-util &#x4E0B;&#x8F7D;&#x5DE5;&#x5177;&#xFF0C;&#x4F7F;&#x7528;&#x6B64;&#x5DE5;&#x5177;&#x9700;&#x8981;&#x4E3A;&#x5F00;&#x53D1;&#x677F;&#x5B89;&#x88C5; libusb &#x9A71;&#x52A8;&#x3002;&#xFF08;&#x6CE8;&#x610F;&#xFF1A; &#x4E0E; GD &#x5B98;&#x65B9;&#x9A71;&#x52A8;&#x4E0D;&#x540C;&#xFF09; </p>
+<p>&#x5EFA;&#x8BAE;&#x901A;&#x8FC7; Zadig &#x5B89;&#x88C5; winusb &#x9A71;&#x52A8;&#x3002;<a href="https://github.com/pbatard/libwdi/releases/download/b721/zadig-2.4.exe" target="_blank">&#x4E0B;&#x8F7D;&#x5730;&#x5740;</a></p>
+<p>&#x4E0B;&#x8F7D;&#x6210;&#x529F;&#x540E;&#x6253;&#x5F00; Zadig</p>
+<p>&#x5728;&#x4E0B;&#x62C9;&#x680F;&#x4E2D;&#x9009;&#x62E9; GD32V&#xFF0C; &#x66FF;&#x6362;&#x9A71;&#x52A8;&#x9009;&#x62E9; WinUSB, &#x70B9;&#x51FB;&#x66FF;&#x6362;&#x6309;&#x94AE;&#xFF0C;&#x5373;&#x53EF;&#x66FF;&#x6362;&#x6210;&#x529F;&#x3002;
+<img src="../../assets/dfu_zadig.png" alt=""></p>
+<h2 id="dfu-&#x56FE;&#x5F62;&#x754C;&#x9762;&#x4E0B;&#x8F7D;"><a name="dfu-&#x56FE;&#x5F62;&#x754C;&#x9762;&#x4E0B;&#x8F7D;" class="anchor-navigation-ex-anchor" href="#dfu-&#x56FE;&#x5F62;&#x754C;&#x9762;&#x4E0B;&#x8F7D;"><i class="fa fa-link" aria-hidden="true"></i></a>7. DFU &#x56FE;&#x5F62;&#x754C;&#x9762;&#x4E0B;&#x8F7D;</h2>
+<p>&#x4E0B;&#x8F7D;DFU&#x5DE5;&#x5177;&#xFF1A;<a href="http://dl.sipeed.com/LONGAN/Nano/Tools/GD32_MCU_Dfu_Tool_V3.8.1.5784_1.rar" target="_blank">http://dl.sipeed.com/LONGAN/Nano/Tools/GD32_MCU_Dfu_Tool_V3.8.1.5784_1.rar</a></p>
+<p>&#x89E3;&#x538B;&#x51FA;&#x4E24;&#x4E2A;&#x6587;&#x4EF6;&#x5939;&#xFF1A;</p>
+<p>GD32 MCU Dfu Drivers_v1.0.1.2316  &#x548C; GD32 MCU Dfu Tool_v3.8.1.5784</p>
+<p>&#x5148;&#x8FDB;&#x5165;driver&#x6587;&#x4EF6;&#x5939;&#xFF0C;&#x5B89;&#x88C5;&#x5BF9;&#x5E94;&#x7684;&#x9A71;&#x52A8;&#x6587;&#x4EF6;&#xFF0C;&#x6CE8;&#x610F;&#x4F7F;&#x7528;&#x7BA1;&#x7406;&#x5458;&#x6743;&#x9650;&#x8FD0;&#x884C;</p>
+<p><img src="../../assets/examples/how_to_install_dfu.png" alt=""></p>
+<p>&#x8FD0;&#x884C; GD32 MCU Dfu Tool.exe 
+&#x5C06; Longan Nano &#x63D2;&#x5230;&#x7535;&#x8111;&#xFF0C;&#x6309;&#x4F4F; Boot0 &#x952E;&#xFF0C;&#x77ED;&#x6309; Reset &#x952E;&#xFF0C;&#x518D;&#x677E;&#x5F00; Boot0 &#x952E;&#xFF0C;
+&#x53EF;&#x4EE5;&#x770B;&#x5230; DFU &#x5DE5;&#x5177;&#x4E2D;&#x8BC6;&#x522B;&#x5230;&#x4E86; GD32VF &#x82AF;&#x7247;</p>
+<p>&#x9009;&#x62E9;&#x5BF9;&#x5E94;&#x7684;&#x56FA;&#x4EF6;&#x6587;&#x4EF6;&#xFF0C;&#x5E76;&#x52FE;&#x9009;&#x70E7;&#x5F55;&#x540E;&#x6821;&#x9A8C;&#xFF0C;&#x70B9;&#x51FB;OK&#xFF0C;&#x5373;&#x53EF;&#x8FDB;&#x884C;&#x70E7;&#x5F55;</p>
+<p>&#x70E7;&#x5F55;&#x5B8C;&#x6210;&#x4E4B;&#x540E;&#x4E0D;&#x4F1A;&#x81EA;&#x52A8;&#x590D;&#x4F4D;&#xFF0C;&#x9700;&#x8981;&#x81EA;&#x5DF1;&#x624B;&#x5DE5;&#x6309;&#x4E0B;&#x590D;&#x4F4D;&#x6309;&#x952E;&#xFF0C;&#x67E5;&#x770B;&#x8FD0;&#x884C;&#x6548;&#x679C;</p>
+<p><img src="../../assets/examples/how_to_use_dfu.png" alt=""></p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="pio.html" class="navigation navigation-prev " aria-label="Previous page: PIO 配置">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="debug.html" class="navigation navigation-next " aria-label="Next page: DEBUG 调试">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Blink闪灯","level":"2.2","depth":1,"next":{"title":"DEBUG 调试","level":"2.3","depth":1,"path":"get_started/debug.md","ref":"get_started/debug.md","articles":[{"title":"使用 Sipeed 调试器","level":"2.3.1","depth":2,"path":"get_started/sipeed-debugger.md","ref":"get_started/sipeed-debugger.md","articles":[]},{"title":"使用 RV-LINK","level":"2.3.2","depth":2,"path":"get_started/rv-link.md","ref":"get_started/rv-link.md","articles":[]}]},"previous":{"title":"PIO 配置","level":"2.1","depth":1,"path":"get_started/pio.md","ref":"get_started/pio.md","articles":[]},"dir":"ltr"},"config":{"plugins":["my-toolbar","-lunr","-search","search-title","anchor-navigation-ex","anchorjs","sharing","splitter","edit-link","ga","expandable-chapters-small@git+https://github.com/sipeed/gitbook-plugin-expandable-chapters-small.git"],"styles":{"website":"./styles/website.css"},"pluginsConfig":{"github":{"url":"https://github.com/sipeed/"},"splitter":{},"search":{"maxIndexSize":1000000000},"lunr":{"maxIndexSize":1000000000},"fontsettings":{"theme":"white","family":"sans","size":2},"search-title":{},"highlight":{},"anchor-navigation-ex":{"associatedWithSummary":false,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":false,"pageTop":{"level1Icon":"fa fa-angle-double-right","level2Icon":"fa fa-angle-double-right","level3Icon":"fa fa-angle-double-right","showLevelIcon":true},"printLog":false,"showGoTop":true,"showLevel":true},"expandable-chapters-small":{},"my-toolbar":{"buttons":[{"label":"Github","text":" ","icon":"fa fa-github","position":"left","target":"_blank","url":"https://github.com/sipeed/"}]},"ga":{"configuration":"auto","token":"UA-119047820-3"},"sharing":{"qq":false,"all":["weibo","facebook","google","twitter","vk"],"douban":false,"facebook":true,"weibo":true,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":false,"google":true,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"edit-link":{"label":"","base":"https://github.com/sipeed/Longan-DOC/blob/master"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchorjs":{}},"theme":"default","author":"sipeed","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"items":[{"name":"博客","link":"http://blog.sipeed.com"},{"name":"论坛","link":"https://bbs.sipeed.com/"},{"name":"反馈","links":[{"name":"文档","link":"https://github.com/sipeed/Longan-DOC/issues"},{"name":"源码","link":"https://github.com/sipeed/platform-gd32v/issues"}]}],"version":[{"name":"<i class='fa fa-angle-down'></i>","links":[{"name":"master","link":"/zh/"},{"name":"dev","link":"/dev/zh/"}]}]},"title":"Longan 文档","language":"zh-hans","gitbook":"*","description":"Longan 文档"},"file":{"path":"get_started/blink.md","mtime":"2020-02-16T09:15:25.985Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-02-16T09:16:22.847Z"},"basePath":"..","book":{"language":"zh"}});
+        });
+    </script>
+</div>
+
+        
+    
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-my-toolbar/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search-title/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search-title/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-anchorjs/anchor.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-anchorjs/anchor-style.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-edit-link/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-ga/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    <script type="text/javascript">
+    function toggleLanguage () {
+            var path = location.href;
+            // console.log(path);
+            if (path.indexOf('/zh') !== -1) {
+                path = path.replace(/\/zh[\/$\s]/i, '/en/');
+            } else if (path.indexOf('/en') !== -1) {
+                path = path.replace(/\/en[\/$\s]/i, '/zh/');
+            }
+            // console.log('after: ' + path);    
+            location.assign(path);
+    }
+    </script>
+
+    </body>
+</html>
+

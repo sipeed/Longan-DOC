@@ -1,0 +1,542 @@
+
+<!DOCTYPE HTML>
+<html lang="en" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Using RV-LINK · Longan DOC</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="sipeed">
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search-title/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../styles/website.css">
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../examples/printf.md" />
+    
+    
+    <link rel="prev" href="sipeed-debugger.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+    <nav role="navigation" class="autoshow">
+        <ul class="summary">
+        <li><a href="https://www.sipeed.com" class="btn" target="_blank"><img src="/assets/icon_sipeed2.png" height="30" /></a></li>
+        <li><a href="#" class="btn" onclick="toggleLanguage()">中文</a></li>
+        
+        
+        <li class="version-link">
+            <a href="#" class="btn" style="color:#444"></i>Version: <span style="font-weight: bold; display: inline"><i class='fa fa-angle-down'></i></span></a>
+            <ul class="hovershow">
+                
+                <li><a href="/en/" class="btn">Version: <span style="font-weight:bold; display: inline">master</span></a></li>
+                
+                <li><a href="/dev/en/" class="btn">Version: <span style="font-weight:bold; display: inline">dev</span></a></li>
+                
+            </ul>
+        </li>                
+        
+                 
+        
+        
+        <li><a href="http://blog.sipeed.com" class="btn" target="_blank"><i></i>Blog</a></li>
+        
+    
+        
+        <li><a href="https://bbs.sipeed.com/" class="btn" target="_blank"><i></i>BBS</a></li>
+        
+    
+        
+        <li>
+            <a href="#" class="btn"><i ></i>Feedback</a>
+            <ul>
+                
+                <li><a href="https://github.com/sipeed/Longan-DOC/issues" class="btn" target="_blank">doc</a></li>
+                
+                <li><a href="https://github.com/sipeed/platform-gd32v/issues" class="btn" target="_blank">Source code</a></li>
+                
+            </ul>
+        </li>                
+        
+          
+        </ul>
+    </nav>
+    
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        <li class="header">Introduction</li>
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Getting started</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="pio.html">
+            
+                <a href="pio.html">
+            
+                    
+                    PIO configuration
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="blink.html">
+            
+                <a href="blink.html">
+            
+                    
+                    Getting to Blinky
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="debug.html">
+            
+                <a href="debug.html">
+            
+                    
+                    Debugging
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.3.1" data-path="sipeed-debugger.html">
+            
+                <a href="sipeed-debugger.html">
+            
+                    
+                    Using Sipeed debugger
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="2.3.2" data-path="rv-link.html">
+            
+                <a href="rv-link.html">
+            
+                    
+                    Using RV-LINK
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Examples</li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="../examples/printf.md">
+            
+                <span>
+            
+                    
+                    UART
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="../examples/badapple.md">
+            
+                <span>
+            
+                    
+                    Playing Badapple
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="sipeed-navbar navbar-collapse" id="navbar" role="navigation">
+    <ul class="nav navbar-nav">
+        <li><a href="https://www.sipeed.com" class="btn" target="_blank"><img src="/assets/icon_sipeed2.png" height="30" /></a></li>
+        <li><a href="#" class="btn autohide" onclick="toggleLanguage()">中文</a></li>
+
+    
+    <li><a href="http://blog.sipeed.com" class="btn autohide" target="_blank"><i ></i>Blog</a></li>
+    
+
+    
+    <li><a href="https://bbs.sipeed.com/" class="btn autohide" target="_blank"><i ></i>BBS</a></li>
+    
+
+    
+    <li>
+        <a href="#" class="btn autohide"><i ></i>Feedback</a>
+        <ul class="hovershow">
+            
+            <li><a href="https://github.com/sipeed/Longan-DOC/issues" class="btn" target="_blank">doc</a></li>
+            
+            <li><a href="https://github.com/sipeed/platform-gd32v/issues" class="btn" target="_blank">Source code</a></li>
+            
+        </ul>
+    </li>                
+    
+    
+
+    
+    <li class="version-link">
+        <a class="btn">Version <span style="font-weight:bold"><i class='fa fa-angle-down'></i></span></a>
+        <ul class="hovershow">
+            
+            <li><a href="/en/" class="btn">Version: <span style="font-weight:bold">master</span></a></li>
+            
+            <li><a href="/dev/en/" class="btn">Version: <span style="font-weight:bold">dev</span></a></li>
+            
+        </ul>
+    </li>                
+    
+   
+    </ul>
+</div>
+<div class="book-header" role="navigation">
+    
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Using RV-LINK</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#using-rv-link"><b> </b>Using RV-LINK</a></li><ul><li><span class="title-icon "></span><a href="#what-is-rv-link"><b>1. </b>What is RV-LINK</a></li><li><span class="title-icon "></span><a href="#burn-rv-link-firmware"><b>2. </b>Burn RV-LINK firmware</a></li><ul><li><span class="title-icon "></span><a href="#using-the-platformio-project-to-burn-a-key"><b>2.1. </b>Using the PlatformIO project to burn a key</a></li><li><span class="title-icon "></span><a href="#other-burning-methods"><b>2.2. </b>Other burning methods</a></li></ul><li><span class="title-icon "></span><a href="#debugging-with-rv-link"><b>3. </b>Debugging with RV-LINK</a></li><ul><li><span class="title-icon "></span><a href="#connecting-the-development-board"><b>3.1. </b>Connecting the development board</a></li><li><span class="title-icon "></span><a href="#using-rv-link-in-the-platformio-ide"><b>3.2. </b>Using RV-LINK in the PlatformIO IDE</a></li><li><span class="title-icon "></span><a href="#using-rv-link-on-other-platforms"><b>3.3. </b>Using RV-LINK on other platforms</a></li></ul></ul></ul></div><a href="#using-rv-link" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="using-rv-link"><a name="using-rv-link" class="anchor-navigation-ex-anchor" href="#using-rv-link"><i class="fa fa-link" aria-hidden="true"></i></a> Using RV-LINK</h1>
+<h2 id="what-is-rv-link"><a name="what-is-rv-link" class="anchor-navigation-ex-anchor" href="#what-is-rv-link"><i class="fa fa-link" aria-hidden="true"></i></a>1. What is RV-LINK</h2>
+<p><strong>RV-LINK</strong> is a simulation-based firmware development board RISC-V, by programming <strong>RV-LINK</strong> firmware can be <strong>Sipeed Longan Nano</strong> development board into a jtagdebugger for debugging another piece Longan or other development support jtag debugging board. RV-LINK project address: <a href="https://gitee.com/zoomdy/RV-LINK" target="_blank">https://gitee.com/zoomdy/RV-LINK</a></p>
+<h2 id="burn-rv-link-firmware"><a name="burn-rv-link-firmware" class="anchor-navigation-ex-anchor" href="#burn-rv-link-firmware"><i class="fa fa-link" aria-hidden="true"></i></a>2. Burn RV-LINK firmware</h2>
+<h3 id="using-the-platformio-project-to-burn-a-key"><a name="using-the-platformio-project-to-burn-a-key" class="anchor-navigation-ex-anchor" href="#using-the-platformio-project-to-burn-a-key"><i class="fa fa-link" aria-hidden="true"></i></a>2.1. Using the PlatformIO project to burn a key</h3>
+<ul>
+<li><p>Download RV-LINK source code</p>
+<p>  Project source code download address: <a href="http://dl.sipeed.com/LONGAN/Nano/Tools/RV-LINK-pio-src-v0.1.zip" target="_blank">http://dl.sipeed.com/LONGAN/Nano/Tools/RV-LINK-pio-src-v0.1.zip</a></p>
+<p>  It can also be downloaded from the official RV-LINK project: <a href="https://gitee.com/zoomdy/RV-LINK" target="_blank">https://gitee.com/zoomdy/RV-LINK</a></p>
+</li>
+<li><p>Open the project directory with VSCODE</p>
+<p>  Extract the source code downloaded above into a separate folder and open the source folder using VSCODE</p>
+<p>  As shown below:
+  <img src="../../assets/pio_open_rvlink.png" alt=""></p>
+<p>  The firmware is usually burned using the DFU method, and the configuration file <strong>does not need to be</strong> modified.</p>
+<p>  If you need to change the programming mode, you can modify <code>platformio.ini</code> to modify the file, please refer to the specific configuration:<a href="blink.html#project-configuration-file">modify the project configuration file</a> </p>
+</li>
+<li><p>Burn firmware with PIO</p>
+<p>  After connecting the development board, after the development board enters the burning mode, click the arrow symbol in the lower left corner to burn.</p>
+<p>  After the programming is successful, you can see the green light flashing on the development board. After connecting the development board to the USB port of the computer, you can see that there is one more serial device in the device manager. At this point the Longan board successfully became the RV-LINK debugger.</p>
+</li>
+</ul>
+<h3 id="other-burning-methods"><a name="other-burning-methods" class="anchor-navigation-ex-anchor" href="#other-burning-methods"><i class="fa fa-link" aria-hidden="true"></i></a>2.2. Other burning methods</h3>
+<p>Reference Document:  <a href="https://gitee.com/zoomdy/RV-LINK/wikis/%E5%B0%86%20Longan%20Nano%20%E5%BC%80%E5%8F%91%E6%9D%BF%E5%8F%98%E6%88%90%20RISC-V%20%E4%BB%BF%E7%9C%9F%E5%99%A8" target="_blank">Turning the Longan Nano Development Board into a RISC-V Emulator</a></p>
+<h2 id="debugging-with-rv-link"><a name="debugging-with-rv-link" class="anchor-navigation-ex-anchor" href="#debugging-with-rv-link"><i class="fa fa-link" aria-hidden="true"></i></a>3. Debugging with RV-LINK</h2>
+<h3 id="connecting-the-development-board"><a name="connecting-the-development-board" class="anchor-navigation-ex-anchor" href="#connecting-the-development-board"><i class="fa fa-link" aria-hidden="true"></i></a>3.1. Connecting the development board</h3>
+<p>Connect the development board that brushes the RV-LINK firmware to the jtag of the development board to be debugged.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">RV-LINK</th>
+<th style="text-align:center">To be debugged development board</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">JTDO</td>
+<td style="text-align:center">JTDO</td>
+</tr>
+<tr>
+<td style="text-align:center">JTDI</td>
+<td style="text-align:center">JTDI</td>
+</tr>
+<tr>
+<td style="text-align:center">JTCK</td>
+<td style="text-align:center">JTCK</td>
+</tr>
+<tr>
+<td style="text-align:center">JTMS</td>
+<td style="text-align:center">JTMS</td>
+</tr>
+<tr>
+<td style="text-align:center">3V3</td>
+<td style="text-align:center">3V3</td>
+</tr>
+<tr>
+<td style="text-align:center">GND</td>
+<td style="text-align:center">GND</td>
+</tr>
+</tbody>
+</table>
+<h3 id="using-rv-link-in-the-platformio-ide"><a name="using-rv-link-in-the-platformio-ide" class="anchor-navigation-ex-anchor" href="#using-rv-link-in-the-platformio-ide"><i class="fa fa-link" aria-hidden="true"></i></a>3.2. Using RV-LINK in the PlatformIO IDE</h3>
+<p>RV-LINK in the PlatformIO IDE can support one-button boot debugging just like any other debugger.</p>
+<p>Only in the project <code>platformio.ini</code> configuration file, specify the debug options and debug port option.</p>
+<p>Sample code</p>
+<pre><code class="lang-ini"><span class="hljs-section">[env:sipeed-longan-nano]</span>
+<span class="hljs-attr">platform</span> = gd32v
+<span class="hljs-attr">framework</span> = gd32vf103-sdk
+<span class="hljs-attr">board</span> = sipeed-longan-na<span class="hljs-literal">no</span>
+<span class="hljs-attr">monitor_speed</span> = <span class="hljs-number">115200</span>
+<span class="hljs-attr">upload_protocol</span> = rv-link ; rv-link download option
+<span class="hljs-attr">debug_tool</span> = rv-link ; rv-link debug option
+<span class="hljs-attr">debug_port</span> = COM2    ;  Required with rv-link Required debugger serial port
+</code></pre>
+<h3 id="using-rv-link-on-other-platforms"><a name="using-rv-link-on-other-platforms" class="anchor-navigation-ex-anchor" href="#using-rv-link-on-other-platforms"><i class="fa fa-link" aria-hidden="true"></i></a>3.3. Using RV-LINK on other platforms</h3>
+<p>Reference <a href="https://gitee.com/zoomdy/RV-LINK/wikis/" target="_blank">RV-LINK WIKI</a></p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="sipeed-debugger.html" class="navigation navigation-prev " aria-label="Previous page: Using Sipeed debugger">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../examples/printf.md" class="navigation navigation-next " aria-label="Next page: UART">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Using RV-LINK","level":"2.3.2","depth":2,"next":{"title":"UART","level":"3.1","depth":1,"path":"examples/printf.md","ref":"examples/printf.md","articles":[]},"previous":{"title":"Using Sipeed debugger","level":"2.3.1","depth":2,"path":"get_started/sipeed-debugger.md","ref":"get_started/sipeed-debugger.md","articles":[]},"dir":"ltr"},"config":{"plugins":["my-toolbar","-lunr","-search","search-title","anchor-navigation-ex","anchorjs","sharing","splitter","edit-link","ga","expandable-chapters-small@git+https://github.com/sipeed/gitbook-plugin-expandable-chapters-small.git"],"styles":{"website":"./styles/website.css"},"pluginsConfig":{"github":{"url":"https://github.com/sipeed/"},"splitter":{},"search":{"maxIndexSize":1000000000},"lunr":{"maxIndexSize":1000000000},"fontsettings":{"theme":"white","family":"sans","size":2},"search-title":{},"highlight":{},"anchor-navigation-ex":{"associatedWithSummary":false,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":false,"pageTop":{"level1Icon":"fa fa-angle-double-right","level2Icon":"fa fa-angle-double-right","level3Icon":"fa fa-angle-double-right","showLevelIcon":true},"printLog":false,"showGoTop":true,"showLevel":true},"expandable-chapters-small":{},"my-toolbar":{"buttons":[{"label":"Github","text":" ","icon":"fa fa-github","position":"left","target":"_blank","url":"https://github.com/sipeed/"}]},"ga":{"configuration":"auto","token":"UA-119047820-3"},"sharing":{"qq":false,"all":["weibo","facebook","google","twitter","vk"],"douban":false,"facebook":true,"weibo":true,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":false,"google":true,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"edit-link":{"label":"","base":"https://github.com/sipeed/Longan-DOC/blob/master"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchorjs":{}},"theme":"default","author":"sipeed","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"items":[{"name":"Blog","link":"http://blog.sipeed.com"},{"name":"BBS","link":"https://bbs.sipeed.com/"},{"name":"Feedback","links":[{"name":"doc","link":"https://github.com/sipeed/Longan-DOC/issues"},{"name":"Source code","link":"https://github.com/sipeed/platform-gd32v/issues"}]}],"version":[{"name":"<i class='fa fa-angle-down'></i>","links":[{"name":"master","link":"/en/"},{"name":"dev","link":"/dev/en/"}]}]},"title":"Longan DOC","language":"en","gitbook":"*","description":"Longan documentation"},"file":{"path":"get_started/rv-link.md","mtime":"2020-02-16T09:15:25.985Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-02-16T09:16:22.847Z"},"basePath":"..","book":{"language":"en"}});
+        });
+    </script>
+</div>
+
+        
+    
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-my-toolbar/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search-title/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search-title/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-anchorjs/anchor.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-anchorjs/anchor-style.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-edit-link/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-ga/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    <script type="text/javascript">
+    function toggleLanguage () {
+            var path = location.href;
+            // console.log(path);
+            if (path.indexOf('/zh') !== -1) {
+                path = path.replace(/\/zh[\/$\s]/i, '/en/');
+            } else if (path.indexOf('/en') !== -1) {
+                path = path.replace(/\/en[\/$\s]/i, '/zh/');
+            }
+            // console.log('after: ' + path);    
+            location.assign(path);
+    }
+    </script>
+
+    </body>
+</html>
+
